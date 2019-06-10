@@ -1,5 +1,7 @@
 package com.zipcodewilmington.assessment2.part1;
 
+import com.j256.ormlite.stmt.query.In;
+
 public class IntegerArrayUtilities {
     public Boolean hasEvenLength(Integer[] array) {
 
@@ -15,6 +17,7 @@ public class IntegerArrayUtilities {
 
 
     public Integer[] range(int start, int stop) {
+
         return null;
 
     }
