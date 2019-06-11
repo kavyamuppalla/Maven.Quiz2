@@ -5,9 +5,8 @@ import java.util.HashMap;
 public class Router {
     HashMap<String, String> map1 = new HashMap<String, String>();
     public void add(String path, String controller) {
-        HashMap<String, String> map1 = new HashMap<String, String>();
-
-       //return map1.putAll(path,controller);
+        //HashMap<String, String> map1 = new HashMap<String, String>();
+        map1.put(path,controller);
     }
 
     public Integer size() {
@@ -15,12 +14,14 @@ public class Router {
     }
 
     public String getController(String path) {
-        return null;
+        return map1.get(path);
     }
 
     public void update(String path, String studentController) {
+        map1.replace(path, studentController);
     }
 
     public void remove(String path) {
+        map1.remove(path);
     }
 }

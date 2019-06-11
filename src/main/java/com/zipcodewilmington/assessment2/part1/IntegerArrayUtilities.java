@@ -5,20 +5,19 @@ import com.j256.ormlite.stmt.query.In;
 public class IntegerArrayUtilities {
     public Boolean hasEvenLength(Integer[] array) {
 
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] % 2 != 0) {
-
-                return false;
-
-            }
+        if(array.length % 2 == 0) {
+            return true;
         }
-        return true;
+        return false;
     }
 
 
     public Integer[] range(int start, int stop) {
-
-        return null;
+        Integer[] a = new Integer[stop - start + 1];
+        for(int i = start, j=0; i <= stop ; i++,j++) {
+            a[j] = i;
+        }
+        return a;
 
     }
 

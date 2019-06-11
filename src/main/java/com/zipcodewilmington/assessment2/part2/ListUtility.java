@@ -6,11 +6,12 @@ public class ListUtility {
     List<Integer> list = new ArrayList<>();
     public Boolean add(int i) {
 
-        if (!list.contains(i)) {
-            list.add(i);
 
-        }
-        return true;
+       //if (!list.contains(i)) {
+         //   list.add(i);
+
+        //}
+        return list.add(i);
     }
 
     public Integer size() {
@@ -18,10 +19,10 @@ public class ListUtility {
     }
 
     public List<Integer> getUnique() {
-        //Set<Integer> setString = new HashSet<>(list);
-        //list.clear();
-        //list.addAll(setString);
-        return null;
+        Set<Integer> setString = new HashSet<>(list);
+        list.clear();
+        list.addAll(setString);
+        return list;
 
     }
 
